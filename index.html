@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-  <head>
-    <meta charset="utf-8">
-    <title>that bright instrument</title>
-  </head>
-  <body>
-    <main>
-      TODO: insert under construction gif here
-    </main>
-    <footer>
-      <address>
-        <ul>
-          <li><a href="https://twitter.com/nicknovitski" rel="me">twits</a></li>
-          <li><a href="https://github.com/nicknovitski" rel="me">gits</a></li>
-          <li><a href="https://facebook.com/nick.novitski" rel="me">faces</a></li>
-        </ul>
-      </address>
-    </footer>
-  </body>
-</html>
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
