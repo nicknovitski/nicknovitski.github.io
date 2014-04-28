@@ -2,12 +2,7 @@
 layout: post
 title: How to Never Type `bundle exec` Ever Again
 date: 2012-10-19 08:37:00
-tumblr_url: http://nicknovitski.tumblr.com/post/33896136639/how-to-never-type-bundle-exec-ever-again
 ---
-*Update*: Nowadays I just use [rbenv-bundler](https://github.com/carsomyr/rbenv-bundler)
-for an even easier, one-step process, but if you don't use rbenv, or you enjoy lovingly
-crafting your dotfiles, continue.
-
 ## Step 1: ~/.bundle/config
     BUNDLE_PATH: .bundle/gem
     BUNDLE_BIN: .bundle/bin
@@ -15,9 +10,9 @@ crafting your dotfiles, continue.
 This configures bundler to install gems in a `.bundle` directory at the project root.
 
 ## Step 2: ~/.gitignore
-    .bundle
+    /.bundle/
 
-This configures git to ignore the `.bundle` directories.
+This configures git to ignore the `.bundle` directories.  The trailing slash means 'directory', and the leading slash means 'at the repository root'.
 
 ## Step 3: ~/.profile (or .bashrc, .zshenv, etc.)
 
@@ -25,6 +20,8 @@ This configures git to ignore the `.bundle` directories.
 
 This configures our shell to look in the `.bundle` directories first when we
 run things on the command line. Things like `rake db:migrate` and `rails s`.
+
+*Update*: If you already use [rbenv](https://github.com/sstephenson/rbenv), you can skip this step by instead installing the [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs) plugin.  That's what I do.
 
 ## Step 4: There is no Step 4
 
