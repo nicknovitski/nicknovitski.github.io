@@ -35,11 +35,11 @@ a:visited { color: #a0a; }
 /*
 /*****************************************************************************/
 .posts {
-  list-style-type: none;
   margin-bottom: 2em;
 }
 
 .posts li {
+  margin-left: 2em;
   line-height: 1.75em;
 }
 

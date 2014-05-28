@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Never Type `bundle exec` Ever Again
-date: 2012-10-19 08:37:00
+category: ruby
 ---
 ## Step 1: ~/.bundle/config
     BUNDLE_PATH: .bundle/gem
