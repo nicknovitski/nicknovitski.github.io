@@ -14,14 +14,14 @@ This configures bundler to install gems in a `.bundle` directory at the project 
 
 This configures git to ignore the `.bundle` directories.  The trailing slash means 'directory', and the leading slash means 'at the repository root'.
 
-## Step 3: ~/.profile (or .bashrc, .zshenv, etc.)
+## Step 3: [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs)
 
-    export PATH="./.bundle/bin:$PATH"
+This plugin changes [rbenv](https://github.com/sstephenson/rbenv)'s shims to
+point to executables in `.bundle/bin` when they exist.
 
-This configures our shell to look in the `.bundle` directories first when we
-run things on the command line. Things like `rake db:migrate` and `rails s`.
+If you don't use rbenv, you should, but if you can't or don't want to, you can instead manually add the following line to your `~/.profile` (or .bashrc, .zshenv, etc.):
 
-*Update*: If you already use [rbenv](https://github.com/sstephenson/rbenv), you can skip this step by instead installing the [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs) plugin.  That's what I do.
+     export PATH="./.bundle/bin:$PATH"
 
 ## Step 4: There is no Step 4
 
