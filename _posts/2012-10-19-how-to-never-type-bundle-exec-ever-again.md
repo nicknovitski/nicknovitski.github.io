@@ -3,27 +3,44 @@ layout: post
 title: How to Never Type `bundle exec` Ever Again
 category: ruby
 ---
-## Step 1: ~/.bundle/config
-    BUNDLE_PATH: .bundle/gem
-    BUNDLE_BIN: .bundle/bin
+## Step 1: Upgrade RubyGems
+    gem update --system
 
-This configures bundler to install gems in a `.bundle` directory at the project root.
+As I write this, the latest version of RubyGems is 2.4.5.  It retains
+compatibility with Ruby 1.9.3, 2.0.0, and 2.1.x.  If you're still on 1.8.7,
+focus on fixing that.
 
-## Step 2: ~/.gitignore
-    /.bundle/
+If you're worried about a RubyGems upgrade breaking something in your system,
+and your system is not doing low-level gem-related hackery, then you should
+stop: RubyGems is a ubiquitous part of the standard library, and thus lives
+under extremely strong pressure to retain backwards-compatibility.
 
-This configures git to ignore the `.bundle` directories.  The trailing slash means 'directory', and the leading slash means 'at the repository root'.
+## Step 2: make RubyGems Gemfile-aware
+    export RUBYGEMS_GEMDEPS=-
 
-## Step 3: [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs)
+Starting with version 2.2.0, setting this environment variable to `-` causes
+RubyGems to automatically recurse through the working directory and its
+parents, looking for a `Gemfile` or `Gemfile.lock`.
 
-This plugin changes [rbenv](https://github.com/sstephenson/rbenv)'s shims to
-point to executables in `.bundle/bin` when they exist.
+If you're worried about this feature being half-baked, well, it was, but it isn't anymore.
 
-If you don't use rbenv, you should, but if you can't or don't want to, you can instead manually add the following line to your `~/.profile` (or .bashrc, .zshenv, etc.):
+NB: 
+```shell
+RUBYGEMS_GEMDEPS=/var/app/Gemfile /var/app/bin/serve
+```
 
-     export PATH="./.bundle/bin:$PATH"
+Once upon a time people used rvm gemsets to .  Then we realized we could just use bundler.  Now I'm telling you can 
 
-## Step 4: There is no Step 4
+## Step 3: There is no Step 3, but I'll use some space to give details
+
+This solution works with system Rubies, every version manager I've tried.
+
+I'm 
+
+
+## Step 4: Again, there is no Step 3, so there is definitely no Step 4, and instead I'll talk about the history of my hatred of this 
+
+One of the cleverest things that Giles Bowkett  put it that he made 
 
 That's it: you’re done, and will never need to type `bundle exec` again.  Take a victory lap and try to put the Bad Old Times behind you.
 
