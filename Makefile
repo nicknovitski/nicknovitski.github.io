@@ -1,2 +1,6 @@
-_site: _config.yml about index.html _layouts _posts 
+_site: gems
 	jekyll build
+
+.PHONY = gems
+gems:
+	gem install -g
