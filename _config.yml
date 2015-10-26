@@ -6,11 +6,11 @@ gems:
   - jemoji
   - jekyll-redirect-from
 permalink: /:categories/:title
-url: nicknovitski.com
+url: http://nicknovitski.com
 author:
   name: Nick Novitski
   email: site@nicknovitski.com
-  uri: nicknovitski.com/about
+  uri: http://nicknovitski.com/about
 ## github-pages
 ## defaults
 # pygments: true
