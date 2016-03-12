@@ -3,7 +3,7 @@ layout: post
 title: How to Never Type `bundle exec` Ever Again
 category: ruby
 ---
-## Step 1: Upgrade RubyGems
+### Step 1: Upgrade RubyGems
     gem update --system
     
 As of my writing these words, the latest version will work with all released 
@@ -11,7 +11,7 @@ versions of Ruby back to 1.9.3.  If you're stuck running 1.8.7, consider fixing
 that first, but you may also refer to [the previous, more 
 complicated version of this post](https://github.com/nicknovitski/nicknovitski.github.io/blob/4516cdf7210bc4cf780cef72627189dc3cea8671/_posts/2012-10-19-how-to-never-type-bundle-exec-ever-again.md).
 
-## Step 2: make RubyGems Gemfile-aware
+### Step 2: make RubyGems Gemfile-aware
     export RUBYGEMS_GEMDEPS=-
 
 Starting with version 2.2.0, setting this environment variable to `-` tells
@@ -19,7 +19,7 @@ RubyGems to automatically recurse upwards through the working directory and its
 parents, looking for a `Gemfile`.  If it finds one, it will resolve all dependencies
 and their versions, and activate them.
 
-## Step 3: There is no Step 3, go away
+### Step 3: There is no Step 3, go away
 
 That a gem is "activated" means a few things:
 
@@ -38,7 +38,7 @@ You don't need binstubs, shell aliases, gemsets, git hooks, cd hooks, or version
 
 Why are you still here.
 
-## Step 4: As there is no Step 3, there is definitely no Step 4
+### Step 4: As there is no Step 3, there is definitely no Step 4
 
 You may have heard 
 [this one](http://www.ted.com/talks/hans_rosling_and_the_magic_washing_machine/transcript?language=en)
@@ -62,7 +62,7 @@ First they gather all the dirty clothes in the house and pack them in.
 
 The moral of the story is that the washing machine is not for washing clothes; it's for *not* washing clothes.
 
-## Step 5: Now you're really asking for it
+### Step 5: Now you're really asking for it
 
 I told that story partly because `bundle exec` makes me angry enough that I have trouble
 discussing it directly. Please, for your own sake, do what it takes to stop typing it.
