@@ -12,6 +12,6 @@ When I regain my free time, the first idea I'll work on is the personal computer
 
 I'll be going to Berlin first.  I have a long enough list of places I want to see that I could fill several years of travel without repetition (though please, if you have a suggestion or invitation, let me know), but I want to see if, over, time, I'm able to make a semi-stable seasonal nomadic pattern.
 
-I plan to write [a newsletter](https://tinyletter.com/nicknovitski); you can [subscribe to it](https://tinyletter.com/nicknovitski) if you'd like occasional personal updates.  I'll write blog posts as well, but I want those to be targeted and useful, and I think that inevitably makes them slightly impersonal. 
+I plan to write [a newsletter](https://tinyletter.com/nicknovitski); you can [subscribe to it](https://tinyletter.com/nicknovitski) if you'd like occasional personal updates.  I'll write on this blog as well, so if you want to know what I think in addition to what I'm doing, you can [subscribe to it too](/feed.xml).
 
 If you'd like to know more about any of the above, or if you have a problem you think I can help with, please do [email me](mailto:now@nicknovitski.com) about it.
