@@ -21,7 +21,7 @@ Demographics being what they are, it’s likely that you’re employed, with alm
 
 If you do work for a salary or wage, ask yourself, if for whatever reason you suddenly began to produce ten times more value per hour of work, would you:
 
-<ol type="a">
+<ol type="A">
 <li>Make ten times as much money, or nearly that</li>
 <li>Be able to work a tenth as many hours, or nearly that</li>
 <li>Neither A nor B</li>
