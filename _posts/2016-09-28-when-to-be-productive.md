@@ -1,7 +1,7 @@
 ---
 layout: post
 title: When to be Productive
-permalink: /productive
+permalink: /when-to-be-productive
 category: work
 ---
 
