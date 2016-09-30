@@ -1,6 +1,2 @@
-_site: gems
+_site:
 	jekyll build
-
-.PHONY = gems
-gems:
-	gem install -g
