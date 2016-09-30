@@ -3,6 +3,19 @@ layout: default
 ---
 
 <article class="post">
-  <header><h2>{{ page.title }}</h2></header>
+  <header>
+    <h2>{{ page.title }}</h2>
+    {% assign words = content | number_of_words %}
+    {% assign minutes = words | divided_by: 300 %}
+    <div class="reading-time">
+      {{ words }} words,
+      {% if minutes == 0 %}
+        less than a minute
+      {% else %}
+        around {{ minutes }} minute{% unless minutes == 1 %}s {% endunless %}
+      {% endif %}
+      to read
+    </div>
+</header>
   {{ content }}
 </article>
