@@ -6,7 +6,7 @@ gems:
   - jemoji
   - jekyll-redirect-from
   - jekyll-sitemap
-permalink: /:categories/:title
+permalink: /:title
 url: http://nicknovitski.com
 author:
   name: Nick Novitski
