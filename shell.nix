@@ -3,7 +3,7 @@
 with pkgs;
 
 let
-  pkg = callPackage ./default.nix { };
+  pkg = callPackage ./. { };
 in
 
 stdenv.lib.overrideDerivation pkg (oldAttrs: {
