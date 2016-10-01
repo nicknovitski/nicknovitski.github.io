@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Never Type `bundle exec` Ever Again
+title: Never Type `bundle exec` Ever Again
 permalink: ruby/how-to-never-type-bundle-exec-ever-again
 category: ruby
 ---
