@@ -1,4 +1,4 @@
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs ? import <nixpkgs> {}, env ? "development" }:
 
 with pkgs;
 
@@ -10,4 +10,5 @@ stdenv.lib.overrideDerivation pkg (oldAttrs: {
   buildInputs = oldAttrs.buildInputs ++ [
     bundix
   ];
+  JEKYLL_ENV = env;
 })
