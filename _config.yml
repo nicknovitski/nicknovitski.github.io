@@ -12,6 +12,14 @@ author:
   name: Nick Novitski
   email: site@nicknovitski.com
   uri: http://nicknovitski.com/about
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - README.md
+  - '*.nix'
+  - result
+  - vendor
 ## github-pages
 ## defaults
 # pygments: true
