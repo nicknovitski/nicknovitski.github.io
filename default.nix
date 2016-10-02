@@ -1,4 +1,4 @@
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs ? import <nixpkgs> {}, env ? "production" }:
 
 with pkgs;
 
@@ -15,6 +15,7 @@ stdenv.mkDerivation {
   name = "nicknovitski.com";
   src = ./.;
   buildInputs = [bundle];
+  JEKYLL_ENV = env;
   installPhase = ''
     mkdir -p $out
     cp -r $src/_site/* $out

@@ -3,12 +3,11 @@
 with pkgs;
 
 let
-  pkg = callPackage ./. { };
+  pkg = callPackage ./. { inherit env; };
 in
 
 stdenv.lib.overrideDerivation pkg (oldAttrs: {
   buildInputs = oldAttrs.buildInputs ++ [
     bundix
   ];
-  JEKYLL_ENV = env;
 })
