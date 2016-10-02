@@ -5,6 +5,7 @@ with pkgs;
 let
   bundle = bundlerEnv {
     name = "github-pages";
+    ruby = ruby_2_1;
     gemfile = ./Gemfile;
     lockfile = ./Gemfile.lock;
     gemset = ./gemset.nix;
