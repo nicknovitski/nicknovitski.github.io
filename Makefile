@@ -1,6 +1,6 @@
-.PHONY: check
+.PHONY: default check
 
-_site:
+default:
 	jekyll build
 
 check:
