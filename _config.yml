@@ -6,8 +6,10 @@ gems:
   - jemoji
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-github-metadata
 permalink: /:title
 url: http://nicknovitski.com
+repository: nicknovitski/nicknovitski.github.io
 author:
   name: Nick Novitski
   email: site@nicknovitski.com

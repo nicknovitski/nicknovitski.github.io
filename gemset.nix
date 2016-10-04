@@ -39,6 +39,14 @@
     };
     version = "1.1.0";
   };
+  colored = {
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "0b0x5jmsyi0z69bm6sij1k89z7h0laag3cb4mdn7zkl9qmxb90lx";
+      type = "gem";
+    };
+    version = "1.2";
+  };
   ethon = {
     source = {
       remotes = ["https://rubygems.org"];
@@ -110,6 +118,14 @@
       type = "gem";
     };
     version = "2.4.2";
+  };
+  html-proofer = {
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "1mys85ilw1rg6vld1fxflhdn9g27yfgj23ss0fcqvhgn0hja6qhh";
+      type = "gem";
+    };
+    version = "3.2.0";
   };
   i18n = {
     source = {
@@ -320,6 +336,14 @@
     };
     version = "4.3.0";
   };
+  parallel = {
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "17b8mp9rxa79m8fm8z28is0s3i2hpfacsq3aj5isfd1m1155lfwq";
+      type = "gem";
+    };
+    version = "1.9.0";
+  };
   pathutil = {
     source = {
       remotes = ["https://rubygems.org"];
@@ -431,5 +455,13 @@
       type = "gem";
     };
     version = "1.1.1";
+  };
+  yell = {
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "17w6qw2dv8ziw5pw5dgmphsm4g1knng6c9nlh69913v0fczsqp8l";
+      type = "gem";
+    };
+    version = "2.0.6";
   };
 }
