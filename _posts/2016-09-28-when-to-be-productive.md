@@ -2,7 +2,6 @@
 layout: post
 title: When to be Productive
 permalink: /when-to-be-productive
-category: work
 ---
 
 The world is full of techniques for personal productivity, and [some of them even work](/tick-tock): they help people produce more work of higher value in fixed time. But what makes a productivity technique _popular_ is not helping people do more, but helping them be anxious about less.
