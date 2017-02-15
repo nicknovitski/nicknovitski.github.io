@@ -3,19 +3,18 @@
 with pkgs;
 
 let
-  bundle = bundlerEnv {
-    name = "github-pages";
-    ruby = ruby_2_1;
-    gemfile = ./Gemfile;
-    lockfile = ./Gemfile.lock;
-    gemset = ./gemset.nix;
+  bundle = bundlerEnv rec {
+    name = "github-pages-${version}";
+    version = (import ./gemset.nix).github-pages.version;
+    ruby = ruby_2_3;
+    gemdir = ./.;
   };
 in
 
 stdenv.mkDerivation {
   name = "nicknovitski.com";
   src = ./.;
-  buildInputs = [bundle];
+  buildInputs = [ bundle ];
   doCheck = true;
   JEKYLL_ENV = env;
   LC_ALL = "en_US.UTF-8";
