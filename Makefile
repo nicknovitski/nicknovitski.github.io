@@ -3,5 +3,5 @@
 default:
 	jekyll build
 
-check:
+check: default
 	htmlproofer --assume-extension ./_site
