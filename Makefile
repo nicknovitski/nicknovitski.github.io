@@ -4,4 +4,4 @@ default:
 	jekyll build
 
 check: default
-	htmlproofer --assume-extension ./_site
+	htmlproofer --assume-extension --check-html --check-opengraph ./_site
