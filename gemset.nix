@@ -100,10 +100,10 @@
   github-pages = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "0px1lh3wjsk3212n971ym1q8f8jzg71n579vll6jsh6xr77j5wni";
+      sha256 = "1mgqmp3mgbys3p4kvnx8kb2wkgb7dlyap3999979kq65m3wmks2d";
       type = "gem";
     };
-    version = "120";
+    version = "122";
   };
   github-pages-health-check = {
     source = {
@@ -263,10 +263,10 @@
   jekyll-sitemap = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "01ibbmygabb4vh9c5s1264ihnwdmysbxhs7k8g123n5kkjl4lb74";
+      sha256 = "1i4gmrl9czgjw4k7gd7mw1pwzjjpfd0y6k08r4l40j0yy2jvf8ss";
       type = "gem";
     };
-    version = "0.12.0";
+    version = "1.0.0";
   };
   jekyll-swiss = {
     source = {
@@ -416,10 +416,10 @@
   kramdown = {
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "05ljwi07hjjwgnjg19sg8mkyxf1an5xn8kn1717d5qrrqkzn3zq1";
+      sha256 = "1isiqc40q44zg57bd6cfnw1a2l0s2j5skw2awn2cz3gcm7wsf49d";
       type = "gem";
     };
-    version = "1.11.1";
+    version = "1.13.2";
   };
   liquid = {
     source = {
