@@ -4,6 +4,9 @@ layout: default
 title: what i'm focused on right now
 ---
 
+> And, if we’re honest, most of the pleasant stable periods we look back on so wistfully exist only in retrospect. When we’re in the midst of them they feel as blind and confusing as any other interval of our lives, but years later we misremember them as happy idylls.
+> <cite>Tim Krieder, _Up in the Air_</cite>
+
 Having reached my idiosyncratic personal finance goal of a "10 year emergency fund", I'm leaving my beloved job of the last 2 years (Braintree/Paypal) and my beloved home of the last 4 (the Bay Area) to travel the world while working on my own software projects, indefinitely.
 
 At the moment, I'm  in the last stages of shrinking my worldly possessions down to a collection which can fit in [this backpack](https://www.tombihn.com/collections/laptop-bags/products/smart-alec).
