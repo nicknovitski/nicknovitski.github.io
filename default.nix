@@ -16,6 +16,7 @@ stdenv.mkDerivation {
   src = ./.;
   buildInputs = [ bundle ];
   doCheck = true;
+  SSL_CERT_FILE="${cacert}/etc/ssl/certs/ca-bundle.crt";
   JEKYLL_ENV = env;
   LC_ALL = "en_US.UTF-8";
   installPhase = ''
