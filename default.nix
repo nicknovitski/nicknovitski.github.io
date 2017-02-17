@@ -21,6 +21,6 @@ stdenv.mkDerivation {
   LC_ALL = "en_US.UTF-8";
   installPhase = ''
     mkdir -p $out
-    cp -r $src/_site/* $out
+    cp --recursive --target-directory $out ./_site/*
   '';
 }
