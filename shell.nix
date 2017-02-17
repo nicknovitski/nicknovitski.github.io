@@ -7,8 +7,5 @@ let
 in
 
 stdenv.lib.overrideDerivation pkg (oldAttrs: {
-  buildInputs = oldAttrs.buildInputs ++ [
-    bundix
-  ];
   shellHook = "alias s='jekyll serve -H 0.0.0.0'";
 })
