@@ -55,10 +55,10 @@ in
   write-good = nodeEnv.buildNodePackage {
     name = "write-good";
     packageName = "write-good";
-    version = "0.10.0";
+    version = "0.10.2";
     src = fetchurl {
-      url = "https://registry.npmjs.org/write-good/-/write-good-0.10.0.tgz";
-      sha1 = "b641141d10ca1f544bc878f8e2bee627d9740d0e";
+      url = "https://registry.npmjs.org/write-good/-/write-good-0.10.2.tgz";
+      sha1 = "9347173f2cbcf46e5600d321c78d4e5c4ebb5933";
     };
     dependencies = [
       sources."passive-voice-0.0.1"
