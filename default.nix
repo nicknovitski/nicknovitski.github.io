@@ -9,9 +9,7 @@ let
     ruby = ruby_2_3;
     gemdir = ./.;
   };
-in
-
-stdenv.mkDerivation {
+  self = stdenv.mkDerivation {
   name = "nicknovitski.com";
   src = ./.;
   buildInputs = [ bundle ];
@@ -23,4 +21,12 @@ stdenv.mkDerivation {
     mkdir -p $out
     cp --recursive --target-directory $out ./_site/*
   '';
-}
+  passthru.update = writeScript "update-dependencies" ''
+    pushd ${self.src}
+    ${pkgs.bundler}/bin/bundle lock --update
+    ${pkgs.bundix}/bin/bundix
+    ${pkgs.nodePackages.node2nix}/bin/node2nix --composition /dev/null
+    popd
+  '';
+};
+in self

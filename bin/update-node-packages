@@ -1,8 +1,0 @@
-#! /usr/bin/env nix-shell
-#! nix-shell -p nodePackages.node2nix -i bash
-
-cd "${BASH_SOURCE%/*}/.."
-
-node2nix --composition /dev/null
-
-# vim: ft=sh
