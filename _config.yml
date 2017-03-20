@@ -7,6 +7,7 @@ gems:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-github-metadata
+  - jekyll-seo-tag
 permalink: /:title
 url: http://nicknovitski.com
 repository: nicknovitski/nicknovitski.github.io
@@ -14,6 +15,7 @@ author:
   name: Nick Novitski
   email: site@nicknovitski.com
   uri: http://nicknovitski.com/about
+  twitter: nicknovitski
 exclude:
   - bin
   - Gemfile
@@ -23,6 +25,8 @@ exclude:
   - '*.nix'
   - result
   - vendor
+twitter:
+  username: nicknovitski
 ## github-pages
 ## defaults
 # pygments: true
