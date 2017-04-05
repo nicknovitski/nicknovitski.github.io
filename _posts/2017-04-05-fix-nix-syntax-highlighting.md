@@ -168,3 +168,9 @@ Syntax-Highlighting Experience when looking at Nix files:
   };
 }
 ```
+
+I'd like to thank Daiderd both for their contributions to vim-nix, and for
+[pointing out the real problem
+](https://github.com/LnL7/vim-nix/issues/11#issuecomment-291292195) when I came
+barging into his github repository with a bogus issue.  Hopefully this can save
+you all from such embarrasment.
