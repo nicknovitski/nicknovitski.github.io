@@ -10,13 +10,16 @@ I've got all the luck I need.
 <cite>Andrew Jackson Jihad, American Tune</cite>
 </blockquote>
 
-About a year ago, having reached financial independence, I tried out early retirement.
+I've recently un-retired.
 
-Slow-but-continuous world travel was cheap, productive, and pleasant.
-But the first few weeks of Donald Trump's presidency led me to cancel all my plans for the year and came back to the US.
+About a year ago, my career in software brought me to a degree of financial independence that enabled me to travel the world indefinitely.
 
-Now I'm working to build community power and material justice in the Bay Area, California, the United States, and the world.
+I did that, and enjoyed it, until this past February.
+As the first month of the Trump presidency progressed, I grew appalled, then ashamed, then annoyed.
+By the end of that month, I had canceled all of my travel plans.
 
-I also consult on Organizational Design, and give training sessions on Build and Site Reliability Engineering.
+I'm now back in the US, working to join and build community power organizations and seek material justice in the Bay Area and beyond.
+
+I'm available for consulting on Organization Design, especially for web-centric engineering companies, and for training sessions on the nix language and family of packaging and deployment tools.
 
 [Email me](mailto:now@nicknovitski.com) to see if we can help each other.
