@@ -1,0 +1,51 @@
+---
+layout: 
+---
+{% assign resume = site.data.resume %}# {{ resume.basics.name }}, {{ resume.basics.label }}
+({{ resume.basics.email }})
+
+{{ resume.basics.summary }}
+
+
+## Skills
+
+{% for skill in resume.skills %} - {{skill.level}} at {{skill.name}}{% if skill.keywords %} ({{ skill.keywords | array_to_sentence_string }}){% endif %}
+{% endfor %}
+
+## Employment
+{% for work in resume.work %}
+### {{ work.startDate }} to {{ work.endDate}}: {{ work.position }} @ {{ work.company }}
+{{ work.summary }}{% for highlight in work.highlights%}
+ - {{ highlight }}{% endfor %}
+{% endfor %}
+
+## References
+{% for ref in resume.references %}
+{{ ref.name }}: "{{ ref.reference }}"
+{% endfor %}
+
+## Writing
+{% for pub in resume.publications %}
+[{{pub.name}}]({{pub.url}}): {{ pub.summary }}
+{% endfor %}
+
+## Projects
+{% for project in resume.projects %}
+[{{project.name}}]({{project.url}}), {{ project.roles | array_to_sentence_string }}: {{project.description}}
+{% endfor %}
+
+## Education
+{% assign ed = resume.education[0] %}
+{{ed.studyType}} of {{ed.area}}, {{ ed.institution }}: {{ ed.courses | array_to_sentence_string }}
+
+
+## Personal
+
+### Web-zones
+ - {{ resume.basics.website }}
+{% for profile in resume.basics.profiles %} - {{ profile.url }}
+{% endfor %}
+
+### Interests
+{% for interest in resume.interests %} - {{ interest.name }}{% if interest.tags %} ({{ interest.tags | array_to_sentence_string }}){% endif %}
+{% endfor %}
