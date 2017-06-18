@@ -1,8 +1,9 @@
 ---
 layout:
 ---
-{% assign resume = site.data.resume %}rel=canonical: {{ "cv.txt" | absolute_url }}
-rel=author: {{ resume.basics.email }} or {{ resume.basics.phone}}
+{% assign resume = site.data.resume %}Link: <{{ "cv.txt" | absolute_url }}>; rel="canonical"
+Link: <mailto:{{ resume.basics.email }}>; rel="author"
+Link: <tel:{{ resume.basics.phone}}>; rel="author"
 
 # {{ resume.basics.name }}, {{ resume.basics.label }}
 
