@@ -46,6 +46,6 @@ layout:
 {% for profile in resume.basics.profiles %} - {{ profile.url }}
 {% endfor %}
 
-### Interests
+### Hobbies and interests
 {% for interest in resume.interests %} - {{ interest.name }}{% if interest.tags %} ({{ interest.tags | array_to_sentence_string }}){% endif %}
 {% endfor %}
