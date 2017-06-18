@@ -6,7 +6,7 @@
     "email": "resume@nicknovitski.com",
     "phone": "1-312-285-0290"
     , "website": "http://nicknovitski.com"
-    , "summary": "I help organizations make themselves smarter, more humane, more relisient, and most of all higher-performing.  My expertise and processes can help any kind of organization, but my deep knowledge of delivering web-centric software systems means businesses built around them see the quickest and most lasting benefits."
+    , "summary": "I help organizations make themselves smarter, more humane, more resilient, and most of all higher-performing.  My expertise and processes can help any kind of organization, but my deep knowledge of delivering web-centric software systems means businesses built around them see the quickest and most lasting benefits."
     , "location": {
       "countryCode": "US",
       "region": "California"
@@ -88,7 +88,7 @@
       "summary": "Maintaining and extending boutique static sites and CMSs",
       "highlights": [
         "Support and design discussion with customers",
-        "Rewrote discount logic for Hudson Trail Outfitters ecommerce site",
+        "Rewrote discount logic for Hudson Trail Outfitters",
         "Individual contributions in JavaScript and PHP"
       ]
     },
