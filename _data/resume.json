@@ -130,8 +130,10 @@
         , "Agile"
         , "XP"
         , "The Scientific Method"
+        , "Holacracy"
         , "Edwards Deming"
         , "William Whyte"
+        , "Peter Drucker"
         , "Dee Hock"
         , "John Boyd"
         ]
@@ -199,13 +201,14 @@
   "interests": [
     { "name": "Strength training" }
     , { "name": "Urban design"
-      , "tags": [ "Christopher Alexander", "Strong Towns" ]
+      , "tags": [ "Christopher Alexander", "William Whyte" ]
       }
     , { "name": "Paragliding" }
     ,{
       "name": "Activism",
       "tags": [ "Feminism", "Anti-racism", "Socialism" ]
     }
+    , { "name": "Meditation" }
     , { "name": "Formal Software Methods" }
     , {
       "name": "Papers",
