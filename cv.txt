@@ -16,7 +16,7 @@ Link: <tel:{{ resume.basics.phone}}>; rel="author"
 {% endfor %}
 
 ## Employment
-{% for work in resume.work %}
+{% assign sorted_work = resume.work | sort: "startDate" | reverse %}{% for work in sorted_work %}
 ### {{ work.startDate }} to {{ work.endDate}}: {{ work.position }} @ {{ work.company }}
 {{ work.summary }}{% for highlight in work.highlights%}
  - {{ highlight }}{% endfor %}
@@ -49,6 +49,6 @@ Link: <tel:{{ resume.basics.phone}}>; rel="author"
 {% for profile in resume.basics.profiles %} - {{ profile.url }}
 {% endfor %}
 
-### Hobbies and interests
-{% for interest in resume.interests %} - {{ interest.name }}{% if interest.tags %} ({{ interest.tags | array_to_sentence_string }}){% endif %}
+### Hobbies and interests{% assign interests = resume.interests | sort: "name" %}
+{% for interest in interests %} - {{ interest.name }}{% if interest.tags %} ({{ interest.tags | sort | array_to_sentence_string }}){% endif %}
 {% endfor %}
