@@ -27,6 +27,9 @@
                  , "username": "nicknovitski"
                  , "url": "https://www.instagram.com/nicknovitski"
                  }
+               , { "network": "LinkedIn"
+                 , "url": "https://www.linkedin.com/in/nicknovitski/"
+                 }
                ]
   },
   "work": [
