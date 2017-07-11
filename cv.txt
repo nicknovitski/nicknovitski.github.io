@@ -1,5 +1,5 @@
 ---
-layout:
+layout: none
 ---
 {% assign resume = site.data.resume %}Link: <{{ "cv.txt" | absolute_url }}>; rel="canonical"
 Link: <mailto:{{ resume.basics.email }}>; rel="author"
@@ -25,11 +25,6 @@ Link: <tel:{{ resume.basics.phone}}>; rel="author"
 ## References
 {% for ref in resume.references %}
 {{ ref.name }}: "{{ ref.reference }}"
-{% endfor %}
-
-## Writing
-{% for pub in resume.publications %}
-[{{pub.name}}]({{pub.url}}): {{ pub.summary }}
 {% endfor %}
 
 ## Projects
