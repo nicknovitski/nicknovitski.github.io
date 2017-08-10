@@ -34,14 +34,24 @@
   },
   "work": [
     {
+      "position": "DevOps Consultant",
+      "startDate": "2016-06",
+      "summary": "Showing engineering teams how to Move Fast and Perfect Things",
+      "highlights": [
+        "Continuous deployment pipeline construction and instruction",
+        "Testing: unit, system, vulnerability, traffic shadowing",
+        "Zero-downtime deployments"
+      ]
+    },
+    {
       "company": "Braintree",
       "position": "Sr. Software Engineer",
       "website": "http://braintreepayments.com",
       "startDate": "2014-5",
       "endDate": "2016-05",
-      "summary": "Dev and then SRE work for high-volume payment processing",
+      "summary": "Development and operations for service with high volume, availability, and security demands",
       "highlights": [
-        "Design and deployment of new public-cloud data and application platform",
+        "Design of new public-cloud data and application platform; zero-downtime containerized deployments",
         "Hiring decisions",
         "Individual contributions in Ruby, JavaScript, Puppet, Clojure, Python, and Go"
       ]
@@ -52,7 +62,7 @@
       "website": "http://sidereel.com",
       "startDate": "2013-01",
       "endDate": "2013-08",
-      "summary": "Wearing several hats for a well-trafficked video scraping and aggregating platform",
+      "summary": "Full-stack development for a well-trafficked video scraping and aggregating platform",
       "highlights": [
         "XP process",
         "re-implemented workstation provisioning using Boxen",
@@ -66,7 +76,7 @@
       "endDate": "2012-10",
       "summary": "Rails-centric web consulting",
       "highlights": [
-        "Wrote a conference kiosk app in rails, to run on a mac mini without an internet connection",
+        "Wrote a conference kiosk app",
         "Wrote a tiny JavaScript REST framework to run from inside the Netsuite \"scripts folder\"",
         "Individual contributions in Ruby and Javascript"
       ]
@@ -77,8 +87,9 @@
       "website": "https://www.accenture.com",
       "startDate": "2009-4",
       "endDate": "2010-5",
-      "summary": "Extending heavily customized SAP ERP for the DLA",
-      "highlights": [ "TS/SCI"
+      "summary": "Extending heavily customized SAP ERP for the Defense Logistics Agency",
+      "highlights": [
+        "TS/SCI clearance"
         , "Discovered Dilbert was real"
         , "Individual contributions in ABAP"
       ]
@@ -174,7 +185,7 @@
     {
       "name": "Distributed Software Design",
       "level": "Intermediate",
-      "keywords": [ "HTTP" ]
+      "keywords": [ "HTTP", "Resilience", "Security"]
     }
     , { "name": "Philosophical Attitude"
       , "level": "Practiced"
@@ -184,28 +195,19 @@
   "projects": [
     { "name": "nixpkgs"
     , "description": "Package repository for Nix and the NixOS linux distribution"
-    , "highlights": [ ]
-    , "keywords": [ ]
     , "startDate": ""
     , "url": "https://github.com/NixOS/nixpkgs"
     , "roles": [ "Contributor", "Maintainer" ]
     }
   ]
-  ,"publications":
-  [ { "name": "Solving the developer hiring crisis"
-    , "releaseDate": ""
-    , "url": "http://nicknovitski.com/solving-the-hiring-crisis"
-    , "summary": "To fix your company and your industry, change your priorities when hiring and promoting."
-    }
-  ]
   , "languages": [
     { "language": "English", "fluency": "Native" },
-    { "language": "Spanish", "fluency": "Slow Kindergartner" }
+    { "language": "Spanish", "fluency": "Not hardly" }
   ],
   "interests": [
     { "name": "Strength training" }
-    , { "name": "Urban design"
-      , "tags": [ "Christopher Alexander", "William Whyte" ]
+    , { "name": "Human-scale Architecture and urban design"
+      , "tags": [ "Jane Jacobs", "Christopher Alexander", "William Whyte" ]
       }
     , { "name": "Paragliding" }
     ,{
@@ -213,7 +215,6 @@
       "tags": [ "Feminism", "Anti-racism", "Socialism" ]
     }
     , { "name": "Meditation" }
-    , { "name": "Formal Software Methods" }
     , {
       "name": "Papers",
       "tags": 
