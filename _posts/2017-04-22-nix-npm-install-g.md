@@ -90,6 +90,8 @@ The `-i` argument specifies what `i`nterpreter the script needs - in this case, 
 But manually moving scripts around is scrub-tier garbage.  The second and superior way to solve the dependency problem is to _install the script itself as a nix package_.  I know, I know: we were doing all this to avoid writing packages, but I swear, it's almost as simple as adding those same six lines of bash directly to your package overrides in `~/.nixpkgs/config.nix`:
 
 ```nix 
+{ pkgs }:
+
 {
   packageOverrides = super: {
     nix-npm-install = pkgs.writeScriptBin "nix-npm-install" ''
@@ -101,8 +103,9 @@ But manually moving scripts around is scrub-tier garbage.  The second and superi
       ${super.nodePackages.node2nix}/bin/node2nix --input <( echo "[\"$1\"]")
       nix-env --install --file .
       popd
-    ''; 
-  }
+    '';
+  };
+}
 ```
 
 And that, with only a few changes, is what I use today.
