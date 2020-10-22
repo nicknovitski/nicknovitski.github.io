@@ -91,18 +91,18 @@ But manually moving scripts around is scrub-tier garbage.  The second and superi
 
 ```nix 
 {
-  packageOverrides = super: {
+  packageOverrides = super: let pkgs = super.pkgs; in {
     nix-npm-install = pkgs.writeScriptBin "nix-npm-install" ''
       #!/usr/bin/env bash
       tempdir="/tmp/nix-npm-install/$1"
       mkdir -p $tempdir
       pushd $tempdir
-      # note the differences here:
       ${super.nodePackages.node2nix}/bin/node2nix --input <( echo "[\"$1\"]")
       nix-env --install --file .
       popd
-    ''; 
-  }
+    '';
+  };
+}
 ```
 
 And that, with only a few changes, is what I use today.
