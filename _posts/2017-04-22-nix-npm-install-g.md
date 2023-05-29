@@ -15,7 +15,7 @@ Ah, the installation instructions say `npm install -g this-package`.  But you do
 
 But this is different: we're talking about a command-line tool which happens to be written in a particular language.  And nix is a perfect match for this kind of thing: a package definition for this tool could automatically install every dependency it needed, but _only_ add the tool itself to your $PATH, hiding npm and node themselves as implementation details.
 
-In fact, if the tool is very popular, it might already be in nixpkgs.  [The list](https://github.com/NixOS/nixpkgs/blob/master/pkgs/top-level/node-packages.json) includes browserify, cordova, webpack, yeoman...
+In fact, if the tool is very popular, it might already be in nixpkgs.  [The list](https://github.com/NixOS/nixpkgs/blob/master/pkgs/development/node-packages/node-packages-v6.json) includes browserify, cordova, webpack, yeoman...
 
 But let's say it doesn't include the package you're after.  At this point, you could submit a patch to add that package.  It looks like it'd be pretty easy, too: just add a line with the package's name to that list, and then run the `generate.sh` command in the same directory to update the nix files which define the source and dependencies for the whole included set of node packages.
 
